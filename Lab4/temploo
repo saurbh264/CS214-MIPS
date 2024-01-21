@@ -1,0 +1,12 @@
+loop_start:
+    # Loop body code goes here
+
+    # Check loop condition (e.g., branch if a condition is met)
+    # If condition is not met, jump out of the loop
+    beq $t0, $zero, loop_end
+
+    # Continue loop by jumping back to loop_start
+    j loop_start
+
+loop_end:
+    # Code after the loop
